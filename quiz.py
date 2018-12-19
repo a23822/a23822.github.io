@@ -1,62 +1,7 @@
-# 20180-12-19 에 학습한 내용
+"""
+파이썬 dictionary 활용 기초!
+"""
 
-> pip install bs4 뷰티풀수프 설치
->
-> pip install requests
->
-> pip install flask
->
-> ## pyenv
->
-> #### install
->
-> ```
-> git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-> ```
->
-> #### 환경변수 설정
->
-> ```
-> $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-> $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-> $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
-> $ source ~/.bashrc   --세션마다 다르니 매번 ㅎ줄것
-> ```
->
-> ### 환경변수 추가후 bashrc 실행 => 터미널 새로고침
->
-> ### Install python
->
-> ```
-> $ pyenv install 3.6.1 # pyenv를 통해서 python 3.6.1을 설치 
-> $ pyenv global 3.6.1 # 전역으로 버전 설정
-> $ python -V # 파이썬 버전 확인
-> $ pyenv versions # 사용가능한 파이썬 버전 리스트 출력
-> ```
->
-> ### Install packages
->
-> ```
-> $ pip install flask
-> $ pip install bs4 # beautiful soup
-> $ pip install requests
-> ```
->
-> ### flask setting
->
-> #### 서버가 자동적으로 닫히게
->
-> ```
-> $ echo 'export FLASK_ENV=development' >> ~/.bashrc
-> ```
-
-flask run --host 0,0,0,0 0port 8080
-
-flask run --host 0.0.0.0 --port 8080
-
-
-
-``` html
 # 1. 평균을 구하세요.
 iu_score = {
     "수학": 80,
@@ -74,6 +19,7 @@ for value in iu_score.values():
     cnt = cnt + 1
 avr = sum / cnt
 print(avr)
+
 
 # 2. 반 평균을 구하세요.
 score = {
@@ -171,5 +117,3 @@ if cnt3 > 0:
     print("영상 2도였던 적이 있습니다")
 else:
     print("없습니다.")
-```
-
